@@ -1,4 +1,4 @@
-from Auto_pro_Kino.pages.PostmanPage import ProjectAPI
+from pages.PostmanPage import Kino_collection
 
 base_url = "https://api.kinopoisk.dev/"
 x_api_key = "8K78K5K-ZKG4DVB-GTMKKPG-KB6R0VC"
@@ -7,7 +7,7 @@ api_key = {
     "X-API-KEY": f"{x_api_key}"
 }
 
-kinopoisk = ProjectAPI(base_url)
+kinopoisk = Kino_collection(base_url)
 
 
 def test_get_movies_by_name(filtres={"query": "Букшоп"},

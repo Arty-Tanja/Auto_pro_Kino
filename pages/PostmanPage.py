@@ -2,7 +2,7 @@ import requests
 import allure
 
 
-class ProjectAPI:
+class Kino_collection:
     """
     Класс содержит методы, выполняющие HTTP-запросы к API Кинопоиска.
     """
