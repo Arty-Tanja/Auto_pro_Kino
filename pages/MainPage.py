@@ -15,7 +15,8 @@ class Search:
         self._driver.get("https://www.kinopoisk.ru/")
         self._driver.maximize_window()
 
-    def search_query(self, query: str):
+    @allure.step("Поиск через поисковую строку")
+    def search_query(self, query: str) -> int:
         """
             Метод закрывает рекламу и реализует поиск через поисковую строку.
         """
